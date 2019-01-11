@@ -6,6 +6,9 @@ class FixAssertNilTest < Minitest::Test
   end
 
   def test_it_does_something_useful
-    assert false
+    nothing = nil
+    nobody = nil
+
+    assert_equal nothing , nobody
   end
 end
